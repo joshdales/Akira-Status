@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import fetch from './fetch';
 
 class App extends Component {
   render() {
@@ -6,7 +7,7 @@ class App extends Component {
       <main>
         <p>Hello</p>
       </main>
-    );
+    )
   }
 }
 
