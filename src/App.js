@@ -1,14 +1,29 @@
 import React, { Component } from 'react';
-import fetch from './fetch';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {akira: {}}
+  };
+
+  checkAkira = () => {
+    fetch('https://app.akira.md/api/system_status').
+      then(response => response.json()).
+        then(data => {
+          console.log(data);
+          this.setState({akira: data})
+        });
+  };
+
+
   render() {
+    const { akira } = this.state
     return (
       <main>
-        <p>Hello</p>
+        <p onClick={this.checkAkira}>Hello</p>
       </main>
-    )
-  }
-}
+    );
+  };
+};
 
 export default App;
