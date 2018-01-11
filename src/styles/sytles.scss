@@ -23,6 +23,14 @@ img {
   height: 6rem;
 }
 
+.open_for_business {
+  color: $akira_green;
+}
+
+.closed_for_business {
+  color: $akira_yellow;
+}
+
 #root {
   height: 100%;
   display: flex;

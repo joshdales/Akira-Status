@@ -17,6 +17,12 @@ main {
 img {
   height: 6rem; }
 
+.open_for_business {
+  color: #85bb82; }
+
+.closed_for_business {
+  color: #eecf82; }
+
 #root {
   height: 100%;
   display: flex;
