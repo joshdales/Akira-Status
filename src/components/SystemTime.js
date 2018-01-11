@@ -7,8 +7,9 @@ class SystemTime extends React.Component {
   };
 
   render() {
+    const { time } = this.props
     return (
-      <time>{this.props.time}</time>
+      <time>{time.toLocaleTimeString('en-US')}</time>
     );
   };
 };

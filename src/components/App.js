@@ -32,19 +32,19 @@ class App extends Component {
               open_at: data.open_hours_today.open_at
               },
             system_time: data.system_time
-          })
+          });
         });
   };
 
   render() {
     const { is_open_for_business, system_time, open_hours_today } = this.state;
-    const { open_at, close_at } = open_hours_today
+    const { open_at, close_at } = open_hours_today;
 
     return (
       <main>
         <img src="Logo.png" alt="Akira"/>
         <OpenStatus is_open={is_open_for_business}/>
-        <SystemTime time={system_time}/>
+        <SystemTime time={new Date(system_time)} />
         <OpenTimes openHours={open_hours_today}/>
       </main>
     );
