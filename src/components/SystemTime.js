@@ -9,7 +9,13 @@ class SystemTime extends React.Component {
   render() {
     const { time } = this.props
     return (
-      <time>{time.toLocaleTimeString('en-US')}</time>
+      <div class="clock">
+        <div class="clock-face">
+          <div class="hand hour-hand"></div>
+          <div class="hand min-hand"></div>
+          <div class="hand second-hand"></div>
+        </div>
+      </div>
     );
   };
 };

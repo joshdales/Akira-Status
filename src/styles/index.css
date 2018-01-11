@@ -26,6 +26,13 @@ img {
 .offline-message {
   color: #76b1d6; }
 
+.clock {
+  display: inline-block;
+  height: 20rem;
+  width: 20rem;
+  border: 0.5rem solid #303539;
+  border-radius: 50%; }
+
 #root {
   height: 100%;
   display: flex;
