@@ -1,5 +1,8 @@
+@import 'colours';
+
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%
+}
 
 body {
   font-size: 1.6rem;
@@ -7,20 +10,22 @@ body {
   padding: 0;
   height: 100vh;
   font-family: Helvetica, sans-serif;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 main {
   min-width: 32rem;
   text-align: center;
-  color: #303539; }
+  color: $akira_grey;
+}
 
 img {
-  height: 6rem; }
+  height: 6rem;
+}
 
 #root {
   height: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
-
-/*# sourceMappingURL=index.css.map */
+  flex-direction: column;
+}
