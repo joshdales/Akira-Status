@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import SystemTime from './SystemTime'
+import SystemTime from './SystemTime';
+import OpenStatus from './OpenStatus';
 
 class App extends Component {
   constructor() {
@@ -21,6 +22,7 @@ class App extends Component {
     return (
       <main>
         <img src="Logo.png" alt="Akira"/>
+        <OpenStatus is_open={is_open_for_business}/>
         <SystemTime time={system_time}/>
       </main>
     );
