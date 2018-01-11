@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SystemTime from './SystemTime'
 
 class App extends Component {
   constructor() {
@@ -15,10 +16,12 @@ class App extends Component {
   };
 
   render() {
+    const { is_open_for_business, system_time } = this.state.akira;
+
     return (
       <main>
-        <img src="Logo.png" alt="Akira "/>
-        <p onClick={this.checkAkira}>Hello</p>
+        <img src="Logo.png" alt="Akira"/>
+        <SystemTime time={system_time}/>
       </main>
     );
   };
