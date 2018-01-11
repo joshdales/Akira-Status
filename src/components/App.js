@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SystemTime from './SystemTime';
 import OpenStatus from './OpenStatus';
 import OpenTimes from './OpenTimes';
+import Offline from './Offline';
 
 class App extends Component {
   constructor() {
@@ -37,8 +38,12 @@ class App extends Component {
   };
 
   render() {
-    const { is_open_for_business, system_time, open_hours_today } = this.state;
+    const { is_open_for_business, system_time, open_hours_today, online } = this.state;
     const { open_at, close_at } = open_hours_today;
+
+    if (!online) {
+      return <Offline />
+    } else
 
     return (
       <main>

@@ -23,6 +23,9 @@ img {
 .closed_for_business {
   color: #eecf82; }
 
+.offline-message {
+  color: #76b1d6; }
+
 #root {
   height: 100%;
   display: flex;
