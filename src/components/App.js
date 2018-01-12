@@ -59,7 +59,7 @@ class App extends Component {
           <img src="Logo.png" alt="Akira"/>
         </h1>
         <OpenStatus is_open={is_open_for_business}/>
-        <SystemTime time={new Date(system_time)} />
+        <SystemTime time={new Date(system_time)} is_open={is_open_for_business} />
         <OpenTimes openHours={open_hours_today}/>
       </main>
     );
