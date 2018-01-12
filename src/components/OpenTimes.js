@@ -2,12 +2,13 @@ import React from 'react';
 
 class OpenTimes extends React.Component {
   displayTime(time) {
-    const timeNum = parseInt(time, 0);
-
-    if (timeNum < 13) {
-      return `${timeNum}AM`
+    const hour = parseInt(time.getHours(), 0);
+    const min = parseInt(time.getMinutes(), 0);
+    const zeroMin = (min < 10 ? '0' : '') + min
+    if (hour < 13) {
+      return `${hour}:${zeroMin}AM`
     } else {
-      return `${timeNum - 12}PM`
+      return `${hour - 12}:${zeroMin}PM`
     }
   }
 
@@ -18,10 +19,10 @@ class OpenTimes extends React.Component {
     return (
       <div className="times">
         <p className="todays-hours opening_time">
-          Open at: <time>{this.displayTime(open_at.getHours())}</time>
+          Open at: <time>{this.displayTime(open_at)}</time>
         </p>
         <p className="todays-hours closing_time">
-          Close at: <time>{this.displayTime(close_at.getHours())}</time>
+          Close at: <time>{this.displayTime(close_at)}</time>
         </p>
       </div>
     );
