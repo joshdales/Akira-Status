@@ -25,12 +25,12 @@ class SystemTime extends React.Component {
 
   render() {
     return (
-      <div className="clock">
-        <div className={`clock_face ${this.props.is_open ? "clock_face_open" : "clock_face_closed"}`}>
+      <div className={`clock ${this.props.is_open ? "clock_open" : "clock_closed"}`}>
+        <div className="clock_face">
+        </div>
           {this.renderMinHand()}
           {this.renderHourHand()}
           <div className="clock-center"></div>
-        </div>
       </div>
     );
   };

@@ -41,9 +41,9 @@ class App extends Component {
     this.checkAkira();
   };
 
-  componentDidMount() {
-    setInterval(() => this.checkAkira(), 1000)
-  }
+  // componentDidMount() {
+  //   setInterval(() => this.checkAkira(), 1000)
+  // }
 
   render() {
     const { is_open_for_business, system_time, open_hours_today, online } = this.state;
