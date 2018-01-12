@@ -32,8 +32,7 @@ img {
   height: 20rem;
   width: 20rem;
   border: 0.5rem solid #303539;
-  border-radius: 50%;
-  box-sizing: content-box; }
+  border-radius: 50%; }
 
 .hand {
   position: absolute;
