@@ -64,7 +64,9 @@ class App extends Component {
     return (
       <main>
         <h1>
-          <img src="Logo.png" alt="Akira"/>
+          <a href="https://akira.md/">  
+            <img src="Logo.png" alt="Akira"/>
+          </a>
         </h1>
         <OpenStatus is_open={is_open_for_business}/>
         <SystemTime time={new Date(system_time)} is_open={is_open_for_business} />
