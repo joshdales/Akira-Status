@@ -28,6 +28,7 @@ class SystemTime extends React.Component {
       <div className="clock">
           {this.renderMinHand()}
           {this.renderHourHand()}
+          <div className="clock-center"></div>
       </div>
     );
   };

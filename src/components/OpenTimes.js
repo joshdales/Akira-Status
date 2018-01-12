@@ -7,9 +7,11 @@ class OpenTimes extends React.Component {
 
     return (
       <div className="times">
-        <p>
-          Open at: <time className="opening_time">{open_at.getHours()}</time> <br/>
-          Close at: <time className="closing_time">{close_at.getHours()}</time> <br/>
+        <p className="todays-hours opening_time">
+          Open at: <time>{open_at.getHours()}</time>
+        </p>
+        <p className="todays-hours closing_time">
+          Close at: <time>{close_at.getHours()}</time>
         </p>
       </div>
     )

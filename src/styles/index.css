@@ -35,6 +35,16 @@ img {
   background: #163f60;
   border-radius: 50%; }
 
+.clock-center {
+  position: absolute;
+  top: 49%;
+  right: 48%;
+  border-radius: 50%;
+  height: 0.8rem;
+  width: 0.8rem;
+  background: #76b1d6;
+  z-index: 100; }
+
 .hand {
   position: absolute;
   top: 50%;

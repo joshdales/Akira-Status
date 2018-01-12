@@ -45,6 +45,17 @@ img {
   border-radius: 50%;
 }
 
+.clock-center {
+  position: absolute;
+  top: 49%;
+  right: 48%;
+  border-radius: 50%;
+  height: 0.8rem;
+  width: 0.8rem;
+  background: $akira_blue;
+  z-index: 100;
+}
+
 .hand {
   position: absolute;
   top: 50%;
