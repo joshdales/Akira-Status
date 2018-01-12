@@ -22,9 +22,8 @@ class App extends Component {
   };
 
   checkAkira() {
-    fetch('https://app.akira.md/api/system_status').
-      then(response => response.json()).
-        then(data => {
+    fetch('https://app.akira.md/api/system_status').then(response =>
+      response.json()).then(data => {
           this.setState({
             direct_signup_allowed: data.direct_signup_allowed,
             is_open_for_business: data.is_open_for_business,
@@ -36,7 +35,7 @@ class App extends Component {
             system_time: data.system_time
           });
         });
-  }
+  };
 
   componentWillMount() {
     this.checkAkira();
@@ -44,23 +43,22 @@ class App extends Component {
 
   componentDidMount() {
     setInterval(() => this.checkAkira(), 1000)
-  }
+  };
 
   renderDoctor() {
     if (!this.state.is_open_for_business){
-      return
+      return;
     }
     return (
       <img src="akira-doctor.png" alt="Akira Doctor" className="doctor" />
-    )
-  }
+    );
+  };
 
   render() {
     const { is_open_for_business, system_time, open_hours_today, online } = this.state;
-    const { open_at, close_at } = open_hours_today;
 
     if (!online) {
-      return <Offline />
+      return <Offline />;
     } else
 
     return (

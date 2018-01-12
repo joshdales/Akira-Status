@@ -21,7 +21,7 @@ class SystemTime extends React.Component {
     const divStyle = {transform: `rotate(${hourDeg}deg)`};
 
     return <div className="hand hour-hand" style={divStyle}></div>;
-  }
+  };
 
   render() {
     return (

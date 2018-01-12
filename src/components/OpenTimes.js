@@ -6,11 +6,11 @@ class OpenTimes extends React.Component {
     const min = parseInt(time.getMinutes(), 0);
     const zeroMin = (min < 10 ? '0' : '') + min
     if (hour < 13) {
-      return `${hour}:${zeroMin}AM`
+      return `${hour}:${zeroMin}AM`;
     } else {
-      return `${hour - 12}:${zeroMin}PM`
-    }
-  }
+      return `${hour - 12}:${zeroMin}PM`;
+    };
+  };
 
   render() {
     const open_at = new Date(this.props.openHours.open_at);

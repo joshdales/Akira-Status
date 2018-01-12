@@ -8,8 +8,7 @@ function Offline() {
       </h1>
       <p className="offline-message">Unfortunatly we are currently offline.<br/> Please try again shortly.</p>
     </main>
-  )
-
-}
+  );
+};
 
 export default Offline;
