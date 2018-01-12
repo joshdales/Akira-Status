@@ -31,18 +31,23 @@ img {
   display: inline-block;
   height: 20rem;
   width: 20rem;
-  border: 0.5rem solid #303539;
+  border: 0.5rem solid #163f60;
+  background: #163f60;
   border-radius: 50%; }
 
 .hand {
   position: absolute;
   top: 50%;
-  background: #303539;
+  right: 50%;
+  background: #76b1d6;
   height: 0.5rem;
   width: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 1s; }
+
+.hour-hand {
+  width: 40%; }
 
 #root {
   height: 100%;

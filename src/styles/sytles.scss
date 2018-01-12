@@ -40,19 +40,25 @@ img {
   display: inline-block;
   height: 20rem;
   width: 20rem;
-  border: 0.5rem solid $akira_grey;
+  border: 0.5rem solid $akira_dark_blue;
+  background: $akira_dark_blue;
   border-radius: 50%;
 }
 
 .hand {
   position: absolute;
   top: 50%;
-  background: $akira_grey;
+  right: 50%;
+  background: $akira_blue;
   height: 0.5rem;
   width: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 1s;
+}
+
+.hour-hand {
+  width: 40%;
 }
 
 #root {
