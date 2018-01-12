@@ -7,6 +7,7 @@ import Offline from './Offline';
 class App extends Component {
   constructor() {
     super();
+    this.checkAkira = this.checkAkira.bind(this);
     this.state = {
       direct_signup_allowed: false,
       is_open_for_business: false,
@@ -17,10 +18,9 @@ class App extends Component {
         },
       system_time: ""
     };
-
   };
 
-  componentWillMount() {
+  checkAkira() {
     fetch('https://app.akira.md/api/system_status').
       then(response => response.json()).
         then(data => {
@@ -35,7 +35,15 @@ class App extends Component {
             system_time: data.system_time
           });
         });
+  }
+
+  componentWillMount() {
+    this.checkAkira();
   };
+
+  componentDidMount() {
+    setInterval(() => this.checkAkira(), 1000)
+  }
 
   render() {
     const { is_open_for_business, system_time, open_hours_today, online } = this.state;
