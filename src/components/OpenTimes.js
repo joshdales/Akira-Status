@@ -20,10 +20,10 @@ class OpenTimes extends React.Component {
     return (
       <div className="times">
         <p className="todays-hours opening_time">
-          {is_open ? 'Opened' : 'Open'} at: <time>{this.displayTime(open_at)}</time>
+          {is_open ? 'Opened' : 'Open'} at... <time>{this.displayTime(open_at)}</time>
         </p>
         <p className="todays-hours closing_time">
-          {is_open ? 'Closing' : 'Closed'} at: <time>{this.displayTime(close_at)}</time>
+          {is_open ? 'Closing' : 'Closed'} at... <time>{this.displayTime(close_at)}</time>
         </p>
       </div>
     );

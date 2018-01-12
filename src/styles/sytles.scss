@@ -23,7 +23,7 @@ img {
   height: 6rem;
 }
 
-.doctor {
+.doctor, .sadman {
   height: 20rem;
 }
 
@@ -108,7 +108,12 @@ img {
   }
 }
 
-
+.todays-hours {
+  width: 32rem;
+  margin: 1.6rem auto;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 #root {
   min-height: 100vh;

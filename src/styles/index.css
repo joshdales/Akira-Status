@@ -17,7 +17,7 @@ main {
 img {
   height: 6rem; }
 
-.doctor {
+.doctor, .sadman {
   height: 20rem; }
 
 .open_for_business {
@@ -78,6 +78,12 @@ img {
   background: #76b1d6; }
 .clock_closed .clock-center {
   background: #76b1d6; }
+
+.todays-hours {
+  width: 32rem;
+  margin: 1.6rem auto;
+  display: flex;
+  justify-content: space-evenly; }
 
 #root {
   min-height: 100vh;

@@ -47,8 +47,8 @@ class App extends Component {
 
   renderDoctor() {
     if (!this.state.is_open_for_business){
-      return;
-    }
+      return (<img src="sadman.png" alt="Akira Sadman" className="sadman" />
+    )}
     return (
       <img src="akira-doctor.png" alt="Akira Doctor" className="doctor" />
     );
