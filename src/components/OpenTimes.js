@@ -19,10 +19,10 @@ class OpenTimes extends React.Component {
     return (
       <div className="times">
         <p className="todays-hours opening_time">
-          Open at: <time>{this.displayTime(open_at)}</time>
+          Opening at: <time>{this.displayTime(open_at)}</time>
         </p>
         <p className="todays-hours closing_time">
-          Close at: <time>{this.displayTime(close_at)}</time>
+          Closeing at: <time>{this.displayTime(close_at)}</time>
         </p>
       </div>
     );

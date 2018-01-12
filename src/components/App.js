@@ -43,7 +43,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    setInterval(() => this.checkAkira(), 1000)
+    // setInterval(() => this.checkAkira(), 1000)
   }
 
   renderDoctor() {
