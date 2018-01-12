@@ -70,7 +70,7 @@ class App extends Component {
         </h1>
         <OpenStatus is_open={is_open_for_business}/>
         <SystemTime time={new Date(system_time)} is_open={is_open_for_business} />
-        <OpenTimes openHours={open_hours_today}/>
+        <OpenTimes openHours={open_hours_today} is_open={is_open_for_business}/>
         {this.renderDoctor()}
       </main>
     );

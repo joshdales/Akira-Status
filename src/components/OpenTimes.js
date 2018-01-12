@@ -15,14 +15,15 @@ class OpenTimes extends React.Component {
   render() {
     const open_at = new Date(this.props.openHours.open_at);
     const close_at = new Date(this.props.openHours.close_at);
+    const {is_open} = this.props;
 
     return (
       <div className="times">
         <p className="todays-hours opening_time">
-          Opening at: <time>{this.displayTime(open_at)}</time>
+          {is_open ? 'Open' : 'Opening'} at: <time>{this.displayTime(open_at)}</time>
         </p>
         <p className="todays-hours closing_time">
-          Closeing at: <time>{this.displayTime(close_at)}</time>
+          {is_open ? 'Closing' : 'Closed'} at: <time>{this.displayTime(close_at)}</time>
         </p>
       </div>
     );

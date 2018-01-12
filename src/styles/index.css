@@ -5,7 +5,7 @@ body {
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   font-family: Helvetica, sans-serif;
   box-sizing: border-box; }
 
@@ -78,7 +78,7 @@ img {
   background: #76b1d6; }
 
 #root {
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column; }
