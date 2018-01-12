@@ -8,6 +8,7 @@ class App extends Component {
   constructor() {
     super();
     this.checkAkira = this.checkAkira.bind(this);
+    this.renderDoctor = this.renderDoctor.bind(this);
     this.state = {
       direct_signup_allowed: false,
       is_open_for_business: false,
@@ -45,6 +46,15 @@ class App extends Component {
     setInterval(() => this.checkAkira(), 1000)
   }
 
+  renderDoctor() {
+    if (!this.state.is_open_for_business){
+      return
+    }
+    return (
+      <img src="akira-doctor.png" alt="Akira Doctor" className="doctor" />
+    )
+  }
+
   render() {
     const { is_open_for_business, system_time, open_hours_today, online } = this.state;
     const { open_at, close_at } = open_hours_today;
@@ -61,6 +71,7 @@ class App extends Component {
         <OpenStatus is_open={is_open_for_business}/>
         <SystemTime time={new Date(system_time)} is_open={is_open_for_business} />
         <OpenTimes openHours={open_hours_today}/>
+        {this.renderDoctor()}
       </main>
     );
   };
