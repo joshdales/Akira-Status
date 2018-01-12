@@ -46,11 +46,11 @@ img {
   width: 20rem;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0px 4px 4px rgba(#303539, 0.3);
+  box-shadow: 0px 0px 20px rgba(#303539, 0.3);
 
   .clock_face {
     position: absolute;
-    height: 50%;
+    height: 51%;
     width: 100%;
   }
 
@@ -63,6 +63,7 @@ img {
     width: 0.8rem;
     background: white;
     z-index: 100;
+    box-shadow: 0px 0px 1px rgba(#303539, 0.5);
   }
 
   .hand {
@@ -75,6 +76,7 @@ img {
     transform-origin: 100%;
     transform: rotate(90deg);
     transition: all 1s;
+    box-shadow: 0px 0px 1px rgba(#303539, 0.5);
   }
 
   .hour-hand {
